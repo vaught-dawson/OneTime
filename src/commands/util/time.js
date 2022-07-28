@@ -14,7 +14,6 @@ module.exports = {
 		});
 
 		let time = interaction.options._hoistedOptions.filter((option) => option.name === "time")[0]["value"];
-		let format = interaction.options._hoistedOptions.filter((option) => option.name === "format")[0];
 		time = Math.floor(Date.parse(time) / 1000);
 
 		const reply = `\`<t:${time}>\``;
